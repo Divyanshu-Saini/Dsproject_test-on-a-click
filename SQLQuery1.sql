@@ -34,6 +34,12 @@ CREATE TABLE Result_tbl (
   correct_ans varchar(max) NOT NULL
 );
 
+ALTER TABLE Result_tbl
+ADD CONSTRAINT fk_QRes
+FOREIGN KEY (question_id)
+REFERENCES Question_tbl(question_id) ON DELETE CASCADE ON UPDATE CASCADE
+
+
 
 --user test score table
 CREATE TABLE Test_Result_tbl (
