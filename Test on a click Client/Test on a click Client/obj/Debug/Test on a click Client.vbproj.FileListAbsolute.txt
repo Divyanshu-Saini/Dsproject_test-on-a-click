@@ -1,0 +1,14 @@
+D:\Test on a click Client\Test on a click Client\bin\Debug\Test on a click Client.exe.config
+D:\Test on a click Client\Test on a click Client\bin\Debug\Test on a click Client.exe
+D:\Test on a click Client\Test on a click Client\bin\Debug\Test on a click Client.pdb
+D:\Test on a click Client\Test on a click Client\bin\Debug\Test on a click Client.xml
+D:\Test on a click Client\Test on a click Client\bin\Debug\MetroFramework.Design.dll
+D:\Test on a click Client\Test on a click Client\bin\Debug\MetroFramework.dll
+D:\Test on a click Client\Test on a click Client\bin\Debug\MetroFramework.Fonts.dll
+D:\Test on a click Client\Test on a click Client\obj\Debug\Test on a click Client.vbprojResolveAssemblyReference.cache
+D:\Test on a click Client\Test on a click Client\obj\Debug\Test_on_a_click_Client.Login.resources
+D:\Test on a click Client\Test on a click Client\obj\Debug\Test_on_a_click_Client.Resources.resources
+D:\Test on a click Client\Test on a click Client\obj\Debug\Test on a click Client.vbproj.GenerateResource.Cache
+D:\Test on a click Client\Test on a click Client\obj\Debug\Test on a click Client.exe
+D:\Test on a click Client\Test on a click Client\obj\Debug\Test on a click Client.xml
+D:\Test on a click Client\Test on a click Client\obj\Debug\Test on a click Client.pdb
