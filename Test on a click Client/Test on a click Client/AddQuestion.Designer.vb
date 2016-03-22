@@ -293,7 +293,6 @@ Partial Class AddQuestion
         Me.Controls.Add(Me.MetroTile1)
         Me.Name = "AddQuestion"
         Me.Text = "AddQuestion"
-        Me.Theme = MetroFramework.MetroThemeStyle.Dark
         Me.ResumeLayout(False)
 
     End Sub
