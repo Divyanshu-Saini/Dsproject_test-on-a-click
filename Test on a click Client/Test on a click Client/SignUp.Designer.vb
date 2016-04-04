@@ -31,6 +31,8 @@ Partial Class SignUp
         Me.MetroTextBox3 = New MetroFramework.Controls.MetroTextBox()
         Me.MetroTile4 = New MetroFramework.Controls.MetroTile()
         Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
+        Me.MetroTile5 = New MetroFramework.Controls.MetroTile()
+        Me.MetroTextBox4 = New MetroFramework.Controls.MetroTextBox()
         Me.SuspendLayout()
         '
         'MetroTextBox1
@@ -39,7 +41,7 @@ Partial Class SignUp
         '
         '
         Me.MetroTextBox1.CustomButton.Image = Nothing
-        Me.MetroTextBox1.CustomButton.Location = New System.Drawing.Point(53, 1)
+        Me.MetroTextBox1.CustomButton.Location = New System.Drawing.Point(119, 1)
         Me.MetroTextBox1.CustomButton.Name = ""
         Me.MetroTextBox1.CustomButton.Size = New System.Drawing.Size(21, 21)
         Me.MetroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
@@ -68,7 +70,7 @@ Partial Class SignUp
         '
         '
         Me.MetroTextBox2.CustomButton.Image = Nothing
-        Me.MetroTextBox2.CustomButton.Location = New System.Drawing.Point(53, 1)
+        Me.MetroTextBox2.CustomButton.Location = New System.Drawing.Point(119, 1)
         Me.MetroTextBox2.CustomButton.Name = ""
         Me.MetroTextBox2.CustomButton.Size = New System.Drawing.Size(21, 21)
         Me.MetroTextBox2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
@@ -173,18 +175,61 @@ Partial Class SignUp
         '
         'MetroButton1
         '
-        Me.MetroButton1.Location = New System.Drawing.Point(232, 254)
+        Me.MetroButton1.Location = New System.Drawing.Point(232, 301)
         Me.MetroButton1.Name = "MetroButton1"
         Me.MetroButton1.Size = New System.Drawing.Size(141, 23)
         Me.MetroButton1.TabIndex = 8
         Me.MetroButton1.Text = "SIGNUP"
         Me.MetroButton1.UseSelectable = True
         '
+        'MetroTile5
+        '
+        Me.MetroTile5.ActiveControl = Nothing
+        Me.MetroTile5.Location = New System.Drawing.Point(64, 261)
+        Me.MetroTile5.Name = "MetroTile5"
+        Me.MetroTile5.Size = New System.Drawing.Size(145, 23)
+        Me.MetroTile5.TabIndex = 9
+        Me.MetroTile5.Text = "College Name:"
+        Me.MetroTile5.UseSelectable = True
+        Me.MetroTile5.Visible = False
+        '
+        'MetroTextBox4
+        '
+        '
+        '
+        '
+        Me.MetroTextBox4.CustomButton.Image = Nothing
+        Me.MetroTextBox4.CustomButton.Location = New System.Drawing.Point(119, 1)
+        Me.MetroTextBox4.CustomButton.Name = ""
+        Me.MetroTextBox4.CustomButton.Size = New System.Drawing.Size(21, 21)
+        Me.MetroTextBox4.CustomButton.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroTextBox4.CustomButton.TabIndex = 1
+        Me.MetroTextBox4.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light
+        Me.MetroTextBox4.CustomButton.UseSelectable = True
+        Me.MetroTextBox4.CustomButton.Visible = False
+        Me.MetroTextBox4.Lines = New String(-1) {}
+        Me.MetroTextBox4.Location = New System.Drawing.Point(232, 261)
+        Me.MetroTextBox4.MaxLength = 32767
+        Me.MetroTextBox4.Name = "MetroTextBox4"
+        Me.MetroTextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.MetroTextBox4.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.MetroTextBox4.SelectedText = ""
+        Me.MetroTextBox4.SelectionLength = 0
+        Me.MetroTextBox4.SelectionStart = 0
+        Me.MetroTextBox4.Size = New System.Drawing.Size(141, 23)
+        Me.MetroTextBox4.TabIndex = 10
+        Me.MetroTextBox4.UseSelectable = True
+        Me.MetroTextBox4.Visible = False
+        Me.MetroTextBox4.WaterMarkColor = System.Drawing.Color.FromArgb(CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer), CType(CType(109, Byte), Integer))
+        Me.MetroTextBox4.WaterMarkFont = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel)
+        '
         'SignUp
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(527, 300)
+        Me.ClientSize = New System.Drawing.Size(487, 353)
+        Me.Controls.Add(Me.MetroTextBox4)
+        Me.Controls.Add(Me.MetroTile5)
         Me.Controls.Add(Me.MetroButton1)
         Me.Controls.Add(Me.MetroTile4)
         Me.Controls.Add(Me.MetroTextBox3)
@@ -208,4 +253,6 @@ Partial Class SignUp
     Friend WithEvents MetroTextBox3 As MetroFramework.Controls.MetroTextBox
     Friend WithEvents MetroTile4 As MetroFramework.Controls.MetroTile
     Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
+    Friend WithEvents MetroTile5 As MetroFramework.Controls.MetroTile
+    Friend WithEvents MetroTextBox4 As MetroFramework.Controls.MetroTextBox
 End Class

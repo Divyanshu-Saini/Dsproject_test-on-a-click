@@ -10,6 +10,9 @@ CREATE TABLE Users_Details_tbl (
   admin bit 
 );
 
+Alter table Users_Details_tbl
+add college_name varchar(100) NULL
+
 --Question set table
 CREATE TABLE Question_tbl (
   question_id int IDENTITY(1,1) NOT NULL  Primary key ,

@@ -12,4 +12,10 @@
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
+
+    Private Sub signupbtn_Click(sender As Object, e As EventArgs) Handles signupbtn.Click
+        SignUp.Show()
+        Me.Hide()
+
+    End Sub
 End Class
