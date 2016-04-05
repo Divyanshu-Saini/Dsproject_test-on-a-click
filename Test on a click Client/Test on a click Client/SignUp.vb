@@ -3,71 +3,57 @@ Imports System.Data
 Imports System.Data.SqlClient
 Imports System.Configuration
 Public Class SignUp
-    Dim dbconnections As New SqlConnection
-    Private Sub SignUp_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
+    Dim localconn As SqlConnection = dbconnection
     Private Sub MetroButton1_Click(sender As Object, e As EventArgs) Handles MetroButton1.Click
         Try
+            'Addind admin details
             If MetroComboBox1.Text = "Admin" Then
                 Dim bit As Boolean = True
-                dbconnection.Open()
-                Dim SQuery As String = "Select * from Users_Details_tlb where user_name= @username"
-                dbcommand = New SqlCommand(SQuery, dbconnection)
-                dbcommand.Parameters.AddWithValue("@username", MetroTextBox1.Text)
-                If dbconnection.State = ConnectionState.Closed Then
-                    dbconnection.Open()
-                End If
-                reader = dbcommand.ExecuteReader
                 If MetroTextBox2.Text = MetroTextBox3.Text Then
-                    If reader.Read = True Then
-                        MsgBox("Username Name already exist!", 0)
-                        reader.Close()
-                    Else
-                        Dim IQuery As String = "Insert  into  Users_Details_tlb values(@Username,@password,@admin)"
-                        dbcommand = New SqlCommand(IQuery, dbconnection)
-                        dbcommand.Parameters.AddWithValue("@Username", MetroTextBox1.Text)
-                        dbcommand.Parameters.AddWithValue("@password", MetroTextBox2.Text)
-                        dbcommand.Parameters.AddWithValue("@admin", bit)
-                        dbcommand.ExecuteNonQuery()
-                        MsgBox("Admin Register Sucessfully !")
-                        dbconnection.Close()
+                    Dim IQuery As String = "Insert  into Users_Details_tbl values(@Username,@password,@admin,@collegename)"
+                    InsertCommand = New SqlCommand(IQuery, dbconnection)
+                    InsertCommand.Parameters.AddWithValue("@Username", MetroTextBox1.Text)
+                    InsertCommand.Parameters.AddWithValue("@password", MetroTextBox2.Text)
+                    InsertCommand.Parameters.AddWithValue("@admin", bit)
+                    InsertCommand.Parameters.AddWithValue("@collegename", MetroTextBox4.Text)
+                    If dbconnection.State = ConnectionState.Closed Then
+                        dbconnection.Open()
                     End If
+                    InsertCommand.ExecuteNonQuery()
+                    MsgBox("Admin Register Sucessfully !")
+                    Me.Hide()
+                    Login.Show()
+                    InsertCommand.Dispose()
+                    dbconnection.Close()
                 Else
                     MsgBox("Password Incorrect ")
                 End If
+
+                'adding student details.
             ElseIf MetroComboBox1.Text = "Student" Then
                 Dim bit As Boolean = False
-                dbconnection.Open()
-                Dim SQuery As String = "Select * from Users_Details_tlb where user_name= @username"
-                dbcommand = New SqlCommand(SQuery, dbconnection)
-                dbcommand.Parameters.AddWithValue("@username", MetroTextBox1.Text)
-                If dbconnection.State = ConnectionState.Closed Then
-                    dbconnection.Open()
-                End If
-                reader = dbcommand.ExecuteReader
                 If MetroTextBox2.Text = MetroTextBox3.Text Then
-                    If reader.Read = True Then
-                        MsgBox("Username Name already exist!", 0)
-                        reader.Close()
-                    Else
-                        Dim IQuery As String = "Insert  into  Users_Details_tlb values(@Username,@password,@admin,@collegename)"
-                        dbcommand = New SqlCommand(IQuery, dbconnection)
-                        dbcommand.Parameters.AddWithValue("@Username", MetroTextBox1.Text)
-                        dbcommand.Parameters.AddWithValue("@password", MetroTextBox2.Text)
-                        dbcommand.Parameters.AddWithValue("@admin", bit)
-                        dbcommand.Parameters.AddWithValue("@collegename", MetroTextBox4.Text)
-                        dbcommand.ExecuteNonQuery()
-                        MsgBox("Student Register Sucessfully !")
-                        dbconnection.Close()
+                    Dim IQuery As String = "Insert  into Users_Details_tbl values(@Username,@password,@admin,@collegename)"
+                    InsertCommand = New SqlCommand(IQuery, dbconnection)
+                    InsertCommand.Parameters.AddWithValue("@Username", MetroTextBox1.Text)
+                    InsertCommand.Parameters.AddWithValue("@password", MetroTextBox2.Text)
+                    InsertCommand.Parameters.AddWithValue("@admin", bit)
+                    InsertCommand.Parameters.AddWithValue("@collegename", MetroTextBox4.Text)
+                    If dbconnection.State = ConnectionState.Closed Then
+                        dbconnection.Open()
                     End If
+                    InsertCommand.ExecuteNonQuery()
+                    MsgBox("Student Register Sucessfully !")
+                    Me.Hide()
+                    Login.Show()
+                    InsertCommand.Dispose()
+                    dbconnection.Close()
                 Else
                     MsgBox("Password Incorrect ")
                 End If
-                End If
+            End If
         Catch ex As Exception
-            MsgBox(ex)
+            MsgBox(ex.Message)
 
         End Try
     End Sub
@@ -80,5 +66,9 @@ Public Class SignUp
             MetroTile5.Show()
             MetroTextBox4.Show()
         End If
+    End Sub
+
+    Private Sub SignUp_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
