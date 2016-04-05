@@ -36,6 +36,7 @@ Partial Class AddQuestion
         Me.MetroTile7 = New MetroFramework.Controls.MetroTile()
         Me.MetroTextBox5 = New MetroFramework.Controls.MetroTextBox()
         Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
+        Me.HtmlLabel1 = New MetroFramework.Drawing.Html.HtmlLabel()
         Me.SuspendLayout()
         '
         'MetroTile1
@@ -272,11 +273,23 @@ Partial Class AddQuestion
         Me.MetroButton1.Text = "SAVE"
         Me.MetroButton1.UseSelectable = True
         '
+        'HtmlLabel1
+        '
+        Me.HtmlLabel1.AutoScroll = True
+        Me.HtmlLabel1.AutoScrollMinSize = New System.Drawing.Size(10, 0)
+        Me.HtmlLabel1.AutoSize = False
+        Me.HtmlLabel1.BackColor = System.Drawing.SystemColors.Window
+        Me.HtmlLabel1.Location = New System.Drawing.Point(428, 34)
+        Me.HtmlLabel1.Name = "HtmlLabel1"
+        Me.HtmlLabel1.Size = New System.Drawing.Size(170, 23)
+        Me.HtmlLabel1.TabIndex = 14
+        '
         'AddQuestion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(621, 428)
+        Me.Controls.Add(Me.HtmlLabel1)
         Me.Controls.Add(Me.MetroButton1)
         Me.Controls.Add(Me.MetroTextBox5)
         Me.Controls.Add(Me.MetroTile7)
@@ -310,4 +323,5 @@ Partial Class AddQuestion
     Friend WithEvents MetroTile7 As MetroFramework.Controls.MetroTile
     Friend WithEvents MetroTextBox5 As MetroFramework.Controls.MetroTextBox
     Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
+    Friend WithEvents HtmlLabel1 As MetroFramework.Drawing.Html.HtmlLabel
 End Class

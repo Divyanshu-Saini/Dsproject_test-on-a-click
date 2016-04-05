@@ -55,6 +55,9 @@
     <Reference Include="MetroFramework.Fonts">
       <HintPath>..\..\MetroFramework_Version1.3.5\MetroFramework.Fonts.dll</HintPath>
     </Reference>
+    <Reference Include="RemotableObject">
+      <HintPath>..\..\RemotableObject\bin\Debug\RemotableObject.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
@@ -88,11 +91,23 @@
     <Compile Include="AddQuestion.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DASHBOARD.Designer.vb">
+      <DependentUpon>DASHBOARD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DASHBOARD.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DBModule.vb" />
     <Compile Include="DSProjectDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DSProjectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FEEDBACK.Designer.vb">
+      <DependentUpon>FEEDBACK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FEEDBACK.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
@@ -132,6 +147,12 @@
     <EmbeddedResource Include="AddQuestion.resx">
       <DependentUpon>AddQuestion.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DASHBOARD.resx">
+      <DependentUpon>DASHBOARD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEEDBACK.resx">
+      <DependentUpon>FEEDBACK.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
@@ -170,12 +191,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\RemoteObject\RemoteObject.vbproj">
-      <Project>{855a243e-080e-459d-b545-1e207f090081}</Project>
-      <Name>RemoteObject</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
