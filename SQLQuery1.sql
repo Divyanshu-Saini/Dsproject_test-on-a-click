@@ -13,6 +13,10 @@ CREATE TABLE Users_Details_tbl (
 Alter table Users_Details_tbl
 add college_name varchar(100) NULL
 
+Alter table Users_Details_tbl
+add constraint def_val
+default 'NOt Applicable' for college_name
+
 --Question set table
 CREATE TABLE Question_tbl (
   question_id int IDENTITY(1,1) NOT NULL  Primary key ,
