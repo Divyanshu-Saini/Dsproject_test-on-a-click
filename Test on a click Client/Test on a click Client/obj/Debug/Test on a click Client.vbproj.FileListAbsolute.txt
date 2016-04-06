@@ -29,3 +29,4 @@ D:\Repos\Dsproject_test-on-a-click\Test on a click Client\Test on a click Client
 D:\Repos\Dsproject_test-on-a-click\Test on a click Client\Test on a click Client\obj\Debug\Test_on_a_click_Client.DASHBOARD.resources
 D:\Repos\Dsproject_test-on-a-click\Test on a click Client\Test on a click Client\bin\Debug\RemotableObject.dll
 D:\Repos\Dsproject_test-on-a-click\Test on a click Client\Test on a click Client\bin\Debug\RemotableObject.pdb
+D:\Repos\Dsproject_test-on-a-click\Test on a click Client\Test on a click Client\obj\Debug\Test_on_a_click_Client.FEEDBACK.resources
