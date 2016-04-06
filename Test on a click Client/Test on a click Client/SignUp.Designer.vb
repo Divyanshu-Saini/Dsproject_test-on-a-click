@@ -179,7 +179,7 @@ Partial Class SignUp
         Me.MetroButton1.Name = "MetroButton1"
         Me.MetroButton1.Size = New System.Drawing.Size(141, 23)
         Me.MetroButton1.TabIndex = 8
-        Me.MetroButton1.Text = "SIGNUP"
+        Me.MetroButton1.Text = "ADDME"
         Me.MetroButton1.UseSelectable = True
         '
         'MetroTile5

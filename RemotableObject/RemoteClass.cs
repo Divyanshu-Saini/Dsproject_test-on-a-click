@@ -16,7 +16,7 @@ namespace RemotableObject
         public int[] createQs()
         {
             int i = 1;
-            IEnumerable<int> questions = Enumerable.Range(1, 4).OrderBy(x => Guid.NewGuid()).Take(3);
+            IEnumerable<int> questions = Enumerable.Range(1, 4).OrderBy(x => Guid.NewGuid()).Take(1);
             foreach (int num in questions)
             {
                 qs[i] = num;
@@ -29,10 +29,19 @@ namespace RemotableObject
         public SqlDataReader generateQsAns(int[] qs, int qs_no)
         {
             int question = qs[qs_no];
-            conn.Open();
-            SqlCommand cmd = new SqlCommand("select question_name,correct_ans from Question_Answer_tbl where question_id= " + question + ";", conn);
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+            }
+            else {
+                conn.Close();
+                conn.Open();
+            }
+
+            SqlCommand cmd = new SqlCommand("select * from Question_Answer_tbl where question_id= " + question + ";", conn);
             SqlDataReader dr = cmd.ExecuteReader();
             return dr;
+            
         }
     }
 }

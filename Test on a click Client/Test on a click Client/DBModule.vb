@@ -1,7 +1,12 @@
 ﻿Imports System
 Imports System.Data
-Imports System.Data.SqlClient
+Imports System.Runtime
+Imports System.Linq
+Imports System.Text
 Imports System.Configuration
+Imports System.Threading.Tasks
+Imports System.Collections.Generic
+Imports System.Data.SqlClient
 Imports System.Runtime.Remoting
 Imports System.Runtime.Remoting.Channels
 Imports System.Runtime.Remoting.Channels.Tcp
@@ -17,7 +22,9 @@ Module DBModule
     Public dt As DataTable
     Public dr As DataRow
     Public ds As DataSet
-
- 
+    Public RemObj As New RemotableObject.RemoteClass
+    Public Sub RemoteSub()
+        RemotingConfiguration.RegisterWellKnownClientType(GetType(RemotableObject.RemoteClass), "tcp://localhost:8085/MyRemoteObject.rem")
+    End Sub
 
 End Module

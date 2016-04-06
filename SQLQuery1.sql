@@ -54,7 +54,7 @@ REFERENCES Question_tbl(question_id) ON DELETE CASCADE ON UPDATE CASCADE
 
 --user test score table
 CREATE TABLE Test_Result_tbl (
-  test_id int NOT NULL Primary key,
+  test_id int IDENTITY(1,1) NOT NULL Primary key,
   user_id int NOT Null,
   score int NOT NULL,
   CONSTRAINT fk_User_test FOREIGN KEY (user_id) REFERENCES Users_details_tbl(user_id)  ON DELETE CASCADE ON UPDATE CASCADE

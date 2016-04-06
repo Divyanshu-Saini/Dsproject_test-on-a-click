@@ -21,7 +21,7 @@ Public Class SignUp
                     End If
                     InsertCommand.ExecuteNonQuery()
                     MsgBox("Admin Register Sucessfully !")
-                    Me.Hide()
+                    Me.Close()
                     Login.Show()
                     InsertCommand.Dispose()
                     dbconnection.Close()
@@ -44,7 +44,7 @@ Public Class SignUp
                     End If
                     InsertCommand.ExecuteNonQuery()
                     MsgBox("Student Register Sucessfully !")
-                    Me.Hide()
+                    Me.Close()
                     Login.Show()
                     InsertCommand.Dispose()
                     dbconnection.Close()

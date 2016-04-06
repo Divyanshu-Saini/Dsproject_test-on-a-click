@@ -1,24 +1,8 @@
 ﻿Public Class Login
-
-  
-    Private Sub MetroTextBox1_Click(sender As Object, e As EventArgs) Handles MetroTextBox1.Click
-
-    End Sub
-
-    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub signupbtn_Click(sender As Object, e As EventArgs) Handles signupbtn.Click
         SignUp.Show()
         Me.Hide()
-
     End Sub
-
     Private Sub loginbtn_Click(sender As Object, e As EventArgs) Handles loginbtn.Click
         Try
             If MetroComboBox1.Text = "Admin" Then
@@ -69,4 +53,6 @@
         End If
         dbconnection.Close()
     End Sub
+
+
 End Class

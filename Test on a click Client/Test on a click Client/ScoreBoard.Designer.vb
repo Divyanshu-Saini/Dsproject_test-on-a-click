@@ -70,6 +70,7 @@ Partial Class ScoreBoard
         Me.MetroGrid1.GridColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.MetroGrid1.Location = New System.Drawing.Point(45, 93)
         Me.MetroGrid1.Name = "MetroGrid1"
+        Me.MetroGrid1.ReadOnly = True
         Me.MetroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(174, Byte), Integer), CType(CType(219, Byte), Integer))
@@ -103,18 +104,21 @@ Partial Class ScoreBoard
         Me.TestidDataGridViewTextBoxColumn.DataPropertyName = "test_id"
         Me.TestidDataGridViewTextBoxColumn.HeaderText = "test_id"
         Me.TestidDataGridViewTextBoxColumn.Name = "TestidDataGridViewTextBoxColumn"
+        Me.TestidDataGridViewTextBoxColumn.ReadOnly = True
         '
         'UseridDataGridViewTextBoxColumn
         '
         Me.UseridDataGridViewTextBoxColumn.DataPropertyName = "user_id"
         Me.UseridDataGridViewTextBoxColumn.HeaderText = "user_id"
         Me.UseridDataGridViewTextBoxColumn.Name = "UseridDataGridViewTextBoxColumn"
+        Me.UseridDataGridViewTextBoxColumn.ReadOnly = True
         '
         'ScoreDataGridViewTextBoxColumn
         '
         Me.ScoreDataGridViewTextBoxColumn.DataPropertyName = "score"
         Me.ScoreDataGridViewTextBoxColumn.HeaderText = "score"
         Me.ScoreDataGridViewTextBoxColumn.Name = "ScoreDataGridViewTextBoxColumn"
+        Me.ScoreDataGridViewTextBoxColumn.ReadOnly = True
         '
         'ScoreBoard
         '

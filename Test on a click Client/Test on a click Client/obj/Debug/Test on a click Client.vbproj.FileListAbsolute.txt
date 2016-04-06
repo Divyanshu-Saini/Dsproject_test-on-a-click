@@ -30,3 +30,5 @@ D:\Repos\Dsproject_test-on-a-click\Test on a click Client\Test on a click Client
 D:\Repos\Dsproject_test-on-a-click\Test on a click Client\Test on a click Client\obj\Debug\Test on a click Client.exe
 D:\Repos\Dsproject_test-on-a-click\Test on a click Client\Test on a click Client\obj\Debug\Test on a click Client.xml
 D:\Repos\Dsproject_test-on-a-click\Test on a click Client\Test on a click Client\obj\Debug\Test on a click Client.pdb
+D:\Repos\Dsproject_test-on-a-click\Test on a click Client\Test on a click Client\obj\Debug\Test_on_a_click_Client.DeleteUser.resources
+D:\Repos\Dsproject_test-on-a-click\Test on a click Client\Test on a click Client\obj\Debug\Test_on_a_click_Client.Test.resources

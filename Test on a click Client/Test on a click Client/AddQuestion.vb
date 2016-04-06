@@ -2,7 +2,12 @@
 Imports System.Data
 Imports System.Data.SqlClient
 Imports System.Configuration
+Imports MetroFramework
 Public Class AddQuestion
+
+    Private Sub AddQuestion_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        DASHBOARD.Show()
+    End Sub
     Private Sub AddQuestion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -27,7 +32,7 @@ Public Class AddQuestion
             InsertCommand.Dispose()
             dbconnection.Close()
         Catch ex As Exception
-            MsgBox(ex.Message)
+            MetroMessageBox.Show(Me, ex.Message, "Exception", MessageBoxButtons.OKCancel, MessageBoxIcon.Hand)
         End Try
     End Sub
 End Class

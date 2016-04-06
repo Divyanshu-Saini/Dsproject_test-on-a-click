@@ -98,6 +98,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DBModule.vb" />
+    <Compile Include="DeleteUser.Designer.vb">
+      <DependentUpon>DeleteUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DSProjectDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -142,6 +148,12 @@
     <Compile Include="SignUp.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Test.Designer.vb">
+      <DependentUpon>Test.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Test.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AddQuestion.resx">
@@ -149,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DASHBOARD.resx">
       <DependentUpon>DASHBOARD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteUser.resx">
+      <DependentUpon>DeleteUser.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FEEDBACK.resx">
       <DependentUpon>FEEDBACK.vb</DependentUpon>
@@ -167,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
