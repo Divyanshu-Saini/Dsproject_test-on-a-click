@@ -1,0 +1,5 @@
+D:\Repos\Dsproject_test-on-a-click\RemotableObject\bin\Debug\RemotableObject.dll
+D:\Repos\Dsproject_test-on-a-click\RemotableObject\bin\Debug\RemotableObject.pdb
+D:\Repos\Dsproject_test-on-a-click\RemotableObject\obj\Debug\RemotableObject.dll
+D:\Repos\Dsproject_test-on-a-click\RemotableObject\obj\Debug\RemotableObject.pdb
+D:\Repos\Dsproject_test-on-a-click\RemotableObject\obj\Debug\RemotableObject.csprojResolveAssemblyReference.cache
